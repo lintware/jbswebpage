@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - JBS Mechanical & Engineering Pte Ltd</title>
+    <meta name="description" content="Comprehensive industrial services including plant maintenance, piping fabrication, E&I services, insulation, and manpower solutions by JBS Mechanical & Engineering.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jbs-purple': '#6B46C1',
+                        'jbs-blue': '#1E40AF',
+                        'jbs-magenta': '#DB2777',
+                        'jbs-dark': '#1F2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="JBS Mechanical & Engineering" class="h-16 w-auto">
+                    <div class="ml-4">
+                        <h1 class="text-xl font-bold text-jbs-dark">JBS MECHANICAL & ENGINEERING</h1>
+                        <p class="text-sm text-gray-600">PTE LTD</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-700 hover:text-jbs-purple px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-jbs-purple px-3 py-2 rounded-md text-sm font-medium transition duration-300">About Us</a>
+                        <a href="services.html" class="text-jbs-purple hover:text-jbs-magenta px-3 py-2 rounded-md text-sm font-medium border-b-2 border-jbs-purple">Services</a>
+                        <a href="projects.html" class="text-gray-700 hover:text-jbs-purple px-3 py-2 rounded-md text-sm font-medium transition duration-300">Projects</a>
+                        <a href="manpower.html" class="text-gray-700 hover:text-jbs-purple px-3 py-2 rounded-md text-sm font-medium transition duration-300">Manpower</a>
+                        <a href="contact.html" class="bg-jbs-purple text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-jbs-magenta transition duration-300">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button text-gray-700 hover:text-jbs-purple focus:outline-none focus:text-jbs-purple">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="index.html" class="text-gray-700 hover:text-jbs-purple block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-jbs-purple block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="services.html" class="text-jbs-purple block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="projects.html" class="text-gray-700 hover:text-jbs-purple block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="manpower.html" class="text-gray-700 hover:text-jbs-purple block px-3 py-2 rounded-md text-base font-medium">Manpower</a>
+                <a href="contact.html" class="text-gray-700 hover:text-jbs-purple block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-br from-jbs-purple via-jbs-blue to-jbs-magenta text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Comprehensive industrial solutions tailored to meet the demanding requirements of Singapore's process industry
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-jbs-dark mb-4">What We Specialize In</h2>
+                <p class="text-lg text-gray-600">From daily maintenance to complex shutdown operations, we deliver excellence across all service areas</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center p-6">
+                    <div class="bg-jbs-purple text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-industry text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-jbs-dark mb-3">Plant Operations</h3>
+                    <p class="text-gray-600">Daily maintenance and annual shutdown services</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-jbs-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-jbs-dark mb-3">Fabrication & Installation</h3>
+                    <p class="text-gray-600">Piping, steel structures, and equipment installation</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-jbs-magenta text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-jbs-dark mb-3">Specialized Services</h3>
+                    <p class="text-gray-600">E&I, insulation, and skilled manpower solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Plant Maintenance & Shutdown -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-jbs-purple to-jbs-blue text-white p-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-industry text-4xl mr-6"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Plant Maintenance & Shutdown</h2>
+                                <p class="text-xl">Comprehensive maintenance solutions for optimal plant performance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-purple mb-4">Daily Plant Maintenance</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Inspect and repair pipes, flanges, and gaskets</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Tighten connections and replace damaged parts</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Assist in pipe fabrication and installation</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Support valve maintenance and alignment</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Preventive maintenance programs</li>
+                                </ul>
+                                
+                                <h4 class="text-lg font-bold text-jbs-dark mt-6 mb-3">Clients We Serve:</h4>
+                                <div class="text-sm text-gray-600 space-y-1">
+                                    <p>• Asahi Kasei Synthetic Rubber Singapore (AKSS)</p>
+                                    <p>• Denka Seraya Singapore Pte Ltd</p>
+                                    <p>• Prime Evolue Singapore Pte Ltd (EVLS)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-blue mb-4">Annual Shutdown (SDM) Services</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Dismantle and reinstall pumps, valves, heat exchangers</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Replace gaskets and perform welding works</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Cut, fit, weld piping and install pipe supports</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Hot work safety with NDT inspection support</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Maintain equipment integrity and plant safety</li>
+                                </ul>
+                                
+                                <div class="bg-jbs-blue text-white p-4 rounded-lg mt-6">
+                                    <h4 class="font-bold mb-2">Experience Highlights</h4>
+                                    <p class="text-sm">Successfully completed major shutdown projects for leading petrochemical companies with zero safety incidents and on-time delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabrication & Installation -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-wrench text-4xl mr-6"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Fabrication & Installation</h2>
+                                <p class="text-xl">Expert fabrication and installation services with certified procedures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-blue mb-4">Piping Works</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Fabrication & installation of piping works</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Pipe support fabrication and installation</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Carbon steel material expertise</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>ASME Section IX welding procedures</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Quality control and inspection</li>
+                                </ul>
+                                
+                                <h3 class="text-xl font-bold text-jbs-magenta mb-4 mt-6">Steel Structure</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Steel structure fabrication and installation</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Structural welding and assembly</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Equipment support structures</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-purple mb-4">Certified Procedures</h3>
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-3">Welding Procedure Specification (WPS)</h4>
+                                    <p class="text-sm text-gray-700 mb-4">We maintain certified WPS and Procedure Qualification Records (PQR) for carbon steel materials under ASME code section IX.</p>
+                                    
+                                    <h4 class="font-bold mb-3">DNV Class Certification</h4>
+                                    <p class="text-sm text-gray-700 mb-4">Our procedures are approved under Det-Norske Veritas (DNV) class for maximum quality assurance.</p>
+                                    
+                                    <h4 class="font-bold mb-3">Quality Control</h4>
+                                    <p class="text-sm text-gray-700">Comprehensive QC processes including NDT inspection and documentation.</p>
+                                </div>
+                                
+                                <div class="bg-jbs-purple text-white p-4 rounded-lg mt-6">
+                                    <h4 class="font-bold mb-2">Special Capabilities</h4>
+                                    <p class="text-sm">Manhole work, modification works, and complex piping installations with hot work safety protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tankage & Vessel Cleaning -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-jbs-magenta to-jbs-purple text-white p-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-flask text-4xl mr-6"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Tankage & Vessel Cleaning</h2>
+                                <p class="text-xl">Professional cleaning and maintenance for tanks and vessels</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-magenta mb-4">Tank Cleaning Services</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Tank cleaning operations</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Vessel cleaning and maintenance</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Internal inspections</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Blinding/de-blinding lines</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Confined space entry procedures</li>
+                                </ul>
+                                
+                                <h3 class="text-xl font-bold text-jbs-purple mb-4 mt-6">Rotating Equipment (ROT)</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Installation of pump work</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Rotating equipment maintenance</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Alignment and balancing</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-blue mb-4">Specialized Operations</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Blending / De-blending work</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Modification of pipe support work</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Safety protocol adherence</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Environmental compliance</li>
+                                </ul>
+                                
+                                <div class="bg-gradient-to-br from-jbs-magenta to-jbs-purple text-white p-6 rounded-lg mt-6">
+                                    <h4 class="font-bold mb-3">Safety Excellence</h4>
+                                    <p class="text-sm">All tank and vessel operations are conducted with the highest safety standards, including proper PPE, gas monitoring, and emergency procedures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electrical & Instrumentation -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-jbs-purple to-jbs-blue text-white p-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-bolt text-4xl mr-6"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Electrical & Instrumentation (E&I) Services</h2>
+                                <p class="text-xl">Comprehensive E&I solutions for modern industrial facilities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-purple mb-4">Installation Services</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Electrical equipment installation</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Instrumentation setup and calibration</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Control system integration</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Cable installation and termination</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Panel wiring and assembly</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-blue mb-4">Testing & Commissioning</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Testing and commissioning services</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>System calibration and validation</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Performance testing</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Documentation and certification</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Maintenance and support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-lg font-bold text-jbs-dark mb-3">Our E&I Expertise</h3>
+                            <p class="text-gray-700">We pride ourselves on having highly skilled professionals for all E&I jobs, with experience in complex industrial control systems and instrumentation for the process industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insulation Services -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-4xl mr-6"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Insulation Services</h2>
+                                <p class="text-xl">Energy-efficient insulation solutions for all industrial applications</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-blue mb-4">Thermal Insulation</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-thermometer-half text-jbs-blue mr-2 mt-1"></i>Temperature control systems</li>
+                                    <li class="flex items-start"><i class="fas fa-thermometer-half text-jbs-blue mr-2 mt-1"></i>Energy conservation solutions</li>
+                                    <li class="flex items-start"><i class="fas fa-thermometer-half text-jbs-blue mr-2 mt-1"></i>Heat loss prevention</li>
+                                    <li class="flex items-start"><i class="fas fa-thermometer-half text-jbs-blue mr-2 mt-1"></i>Process optimization</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-magenta mb-4">Acoustic Insulation</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-volume-down text-jbs-magenta mr-2 mt-1"></i>Noise reduction solutions</li>
+                                    <li class="flex items-start"><i class="fas fa-volume-down text-jbs-magenta mr-2 mt-1"></i>Sound dampening materials</li>
+                                    <li class="flex items-start"><i class="fas fa-volume-down text-jbs-magenta mr-2 mt-1"></i>Workplace comfort improvement</li>
+                                    <li class="flex items-start"><i class="fas fa-volume-down text-jbs-magenta mr-2 mt-1"></i>Regulatory compliance</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-purple mb-4">Cryogenic Applications</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-snowflake text-jbs-purple mr-2 mt-1"></i>Low-temperature insulation</li>
+                                    <li class="flex items-start"><i class="fas fa-snowflake text-jbs-purple mr-2 mt-1"></i>Specialized material application</li>
+                                    <li class="flex items-start"><i class="fas fa-snowflake text-jbs-purple mr-2 mt-1"></i>Condensation prevention</li>
+                                    <li class="flex items-start"><i class="fas fa-snowflake text-jbs-purple mr-2 mt-1"></i>System efficiency optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-6 rounded-lg">
+                            <h3 class="text-lg font-bold mb-3">Skilled Insulation Team</h3>
+                            <p>We take pride in our team of skilled experts for all insulation jobs, providing solutions that help control temperature, save energy, and reduce noise in industrial and commercial projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-jbs-magenta to-jbs-purple text-white p-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-plus-circle text-4xl mr-6"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold mb-2">Additional Specialized Services</h2>
+                                <p class="text-xl">Comprehensive support services for complete project delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-magenta mb-4">Construction & Management</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Construction work and management</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Project coordination and oversight</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Interior decoration services</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-magenta mr-2 mt-1"></i>Site preparation and setup</li>
+                                </ul>
+                                
+                                <h3 class="text-xl font-bold text-jbs-blue mb-4 mt-6">Painting Services</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Industrial painting and coating</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Surface preparation and treatment</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Protective coating application</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-blue mr-2 mt-1"></i>Quality finishing work</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-jbs-purple mb-4">Support Services</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Scaffold / Insulator manpower</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Manpower management services</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Equipment and tool supply</li>
+                                    <li class="flex items-start"><i class="fas fa-check text-jbs-purple mr-2 mt-1"></i>Site logistics and coordination</li>
+                                </ul>
+                                
+                                <div class="bg-gray-50 p-6 rounded-lg mt-6">
+                                    <h4 class="font-bold text-jbs-dark mb-3">Quality Assurance</h4>
+                                    <p class="text-gray-700 text-sm">All our services are delivered with comprehensive quality control measures, documentation, and adherence to international standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-jbs-purple to-jbs-magenta text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Discuss Your Project Requirements?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Our team of experts is ready to provide tailored solutions for your industrial maintenance, fabrication, and specialized service needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-yellow-400 text-jbs-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+                    Request a Quote
+                </a>
+                <a href="projects.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-jbs-purple transition duration-300">
+                    View Our Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-jbs-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="logo.png" alt="JBS Mechanical & Engineering" class="h-12 w-auto mr-3">
+                        <div>
+                            <h3 class="text-lg font-bold">JBS MECHANICAL & ENGINEERING</h3>
+                            <p class="text-sm text-gray-400">PTE LTD</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner for plant maintenance, shutdown works, and comprehensive industrial solutions in Singapore's process industry.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="mailto:jbsmechanical56@gmail.com" class="text-gray-400 hover:text-white"><i class="fas fa-envelope text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="manpower.html" class="text-gray-400 hover:text-white">Manpower</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-phone mr-2"></i> +65 9353 2674</p>
+                        <p><i class="fas fa-envelope mr-2"></i> jbsmechanical56@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Eco-Tech@Sunview<br>1 Sunview Road, #02-38/39<br>Singapore 627615</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 JBS Mechanical & Engineering Pte Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html> 
