@@ -1,0 +1,309 @@
+{
+  "projects": [
+    {
+      "id": "denka-daily-maintenance",
+      "title": "DENKA Daily Maintenance",
+      "client": "Singapore Takada Ind Pte Ltd",
+      "period": "2022-2024",
+      "status": "ongoing",
+      "categories": ["maintenance", "ongoing"],
+      "gradient": "from-jbs-purple to-jbs-blue",
+      "jobScope": [
+        "Inspect and Repair Pipes, Flanges, and Gaskets",
+        "Tighten Connections and Replace Damaged Parts",
+        "Assist in Pipe Fabrication and Installation",
+        "Support Valve Maintenance and Alignment"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "denka-sdm",
+      "title": "DENKA-SDM Project",
+      "client": "Singapore Takada Ind Pte Ltd",
+      "period": "March-May 2022",
+      "status": "completed",
+      "categories": ["sdm"],
+      "gradient": "from-jbs-blue to-jbs-magenta",
+      "jobScope": [
+        "Dismantle and reinstall pumps, valves, heat exchangers",
+        "Cut, fit, weld piping, tighten flanges",
+        "Perform welding works with hot work safety",
+        "Clean tanks and vessels, internal inspections"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "pcs-sdm",
+      "title": "PCS SDM Project",
+      "client": "Singapore Takada Ind Pte Ltd",
+      "period": "June-December 2022",
+      "status": "completed",
+      "categories": ["sdm"],
+      "gradient": "from-jbs-magenta to-jbs-purple",
+      "jobScope": [
+        "Dismantle and reinstall pumps, valves, heat exchangers",
+        "Cut, fit, weld piping and install pipe supports",
+        "Perform welding works with NDT inspection support",
+        "Ensure all tasks maintain equipment integrity"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "evls-sdm",
+      "title": "EVLS-SDM Project",
+      "client": "Singapore Takada Ind Pte Ltd",
+      "period": "2022-2025",
+      "status": "ongoing",
+      "categories": ["sdm", "ongoing"],
+      "gradient": "from-jbs-purple to-jbs-blue",
+      "jobScope": [
+        "Dismantle and reinstall equipment and heat exchangers",
+        "Welding works with hot work safety protocols",
+        "Clean tanks and vessels, blind/de-blind lines",
+        "Ensure equipment integrity and plant safety"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "akss-sdm",
+      "title": "AKSS-SDM Project",
+      "client": "Singapore Takada Ind Pte Ltd",
+      "period": "2022-2025",
+      "status": "ongoing",
+      "categories": ["sdm", "ongoing"],
+      "gradient": "from-jbs-blue to-jbs-magenta",
+      "clientFullName": "Asahi Kasei Synthetic Rubber Singapore Pte Ltd",
+      "jobScope": [
+        "Annual SDM operations",
+        "Tank/Vessel cleaning work",
+        "Installation of pump work",
+        "Blending/De-blending work"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "crisp-exxonmobile",
+      "title": "CRISP-EXXONMOBILE",
+      "client": "Aerostar Corporation Pte Ltd",
+      "period": "Jan-Sep 2024",
+      "status": "completed",
+      "categories": ["construction", "ongoing"],
+      "gradient": "from-jbs-magenta to-jbs-purple",
+      "jobScope": [
+        "Installing and aligning pipes, valves, and equipment",
+        "Cutting, welding, and replacing gaskets and seals",
+        "Assisting in dismantling and reinstalling",
+        "Cleaning, carrying materials, supporting skilled workers"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "6tf-project",
+      "title": "6TF Project",
+      "client": "Singapore Takada Pte Ltd",
+      "period": "2022-2025",
+      "status": "ongoing",
+      "categories": ["construction", "ongoing"],
+      "gradient": "from-jbs-purple to-jbs-blue",
+      "jobScope": [
+        "Install and assemble pipes, valves for plant system",
+        "Flange tightening, gasket replacement",
+        "Hydrotesting to ensure leak-free piping systems",
+        "Supporting by carrying tools, site preparation"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "sembcorp-project",
+      "title": "SEMBCORP Project",
+      "client": "Nippon Express Pte Ltd",
+      "period": "Jan-June 2023",
+      "status": "completed",
+      "categories": ["construction"],
+      "gradient": "from-jbs-blue to-jbs-magenta",
+      "jobScope": [
+        "Fitters install and assemble pipes, valves, equipment",
+        "Tighten flanges, replace gaskets, align parts",
+        "Assist in welding preparation and pipe supports",
+        "General workers clean site and carry materials"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "linde-project",
+      "title": "LINDE Project",
+      "client": "Clarity E & C Pte Ltd",
+      "period": "2025",
+      "status": "ongoing",
+      "categories": ["construction", "ongoing"],
+      "gradient": "from-jbs-magenta to-jbs-purple",
+      "jobScope": [
+        "Welders and fitters assemble metal structures",
+        "Read and follow technical drawings",
+        "Use various welding techniques (arc, MIG, TIG)",
+        "Follow safety procedures with protective gear"
+      ],
+      "manpower": ["Welders", "Mechanical Fitters", "Supervisors"]
+    },
+    {
+      "id": "upwrp-pub",
+      "title": "UPWRP (PUB) Project",
+      "client": "Asia Project Engineering Pte Ltd",
+      "period": "Oct-Dec 2024",
+      "status": "completed",
+      "categories": ["construction"],
+      "gradient": "from-jbs-purple to-jbs-blue",
+      "jobScope": [
+        "Installing and aligning pipes, valves, and equipment",
+        "Cutting, welding, and replacing gaskets and seals",
+        "Assisting in dismantling and reinstalling work",
+        "Setting up barriers and moving tools for tasks"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "keppel-marina",
+      "title": "KEPPEL MARINA Project",
+      "client": "Rihno2 Technology Pte Ltd",
+      "period": "2025",
+      "status": "ongoing",
+      "categories": ["construction", "ongoing"],
+      "gradient": "from-jbs-blue to-jbs-magenta",
+      "jobScope": [
+        "Welders and fitters assemble metal structures",
+        "Read and follow technical drawings",
+        "Align and position pipes and parts before welding",
+        "Follow safety procedures and use protective gear"
+      ],
+      "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+    },
+    {
+      "id": "tuas-project",
+      "title": "TUAS Project",
+      "client": "Loh & Loh Engineering Pte Ltd",
+      "period": "2025",
+      "status": "ongoing",
+      "categories": ["construction", "ongoing"],
+      "gradient": "from-jbs-magenta to-jbs-purple",
+      "jobScope": [
+        "Welders join metal parts using arc, MIG, TIG welding",
+        "Read drawings and prepare materials for welding",
+        "Perform hot work safely under proper permits",
+        "Check weld quality and assist with NDT testing"
+      ],
+      "manpower": ["Welders", "Technicians", "Supervisors"]
+    },
+    {
+        "id": "d-lycra-project",
+        "title": "D LYCRA PROJECT",
+        "client": "L MECH ENGINEERING PTE LTD",
+        "period": "2025",
+        "status": "ongoing",
+        "categories": ["maintenance", "ongoing"],
+        "gradient": "from-jbs-purple to-jbs-blue",
+        "jobScope": [
+          "Fitters install, assemble, and align pipes, valves, and mechanical equipment",
+          "They cut, fit, and weld piping sections and replace gaskets and seals",
+          "Fitters assist with equipment dismantling, reinstallation, and pipe support setup",
+          "handle site cleaning, carry materials, and assist skilled workers",
+          "Setting up safety barriers, move tools and equipment, and support daily tasks."
+        ],
+        "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+      },
+    {
+        "id": "ipi-project",
+        "title": "IPI PROJECT",
+        "client": "SANKYU (S) PTE LTD",
+        "period": "2025",
+        "status": "ongoing",
+        "categories": ["maintenance", "ongoing"],
+        "gradient": "from-jbs-blue to-jbs-magenta",
+        "jobScope": [
+          "Fitters install, assemble, and align pipes, valves, and mechanical equipment",
+          "They cut, fit, and weld piping sections and replace gaskets and seals",
+          "Fitters assist with equipment dismantling, reinstallation, and pipe support setup",
+          "handle site cleaning, carry materials, and assist skilled workers",
+          "Setting up safety barriers, move tools and equipment, and support daily tasks."
+        ],
+        "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+      },
+    {
+        "id": "mhi-project",
+        "title": "MHI PROJECT",
+        "client": "BRM Engineering & Construction Pte ltd",
+        "period": "2025",
+        "status": "ongoing",
+        "categories": ["maintenance", "ongoing"],
+        "gradient": "from-jbs-magenta to-jbs-purple",
+        "jobScope": [
+          "Fitters install, assemble, and align pipes, valves, and mechanical equipment",
+          "They cut, fit, and weld piping sections and replace gaskets and seals",
+          "Fitters assist with equipment dismantling, reinstallation, and pipe support setup",
+          "handle site cleaning, carry materials, and assist skilled workers",
+          "Setting up safety barriers, move tools and equipment, and support daily tasks."
+        ],
+        "manpower": ["Mechanical Fitters", "Technicians", "Supervisors"]
+      },
+    {
+        "id": "tsip-boiler-project",
+        "title": "TSIP BOILER PROJECT",
+        "client": "Ensure Engineering Pte ltd",
+        "period": "2025",
+        "status": "ongoing",
+        "categories": ["maintenance", "ongoing"],
+        "gradient": "from-jbs-purple to-jbs-blue",
+        "jobScope": [
+            "Welders join metal parts using methods like arc, MIG, or TIG welding",
+            "They read drawings and prepare materials for welding work",
+            "They perform hot work safely under proper permits and supervision",
+            "Fitters install, assemble, and align pipes, valves, and mechanical equipment",
+            "They cut, fit, and weld piping sections and replace gaskets and seals"
+        ],
+        "manpower": ["Welders", "Mechanical Fitters", "Technicians", "Supervisors"]
+      },
+    {
+        "id": "twrp-project",
+        "title": "TWRP PROJECT",
+        "client": "Cyclect Engineering Pte ltd",
+        "period": "2025",
+        "status": "ongoing",
+        "categories": ["maintenance", "ongoing"],
+        "gradient": "from-jbs-blue to-jbs-magenta",
+        "jobScope": [
+            "Welders join metal parts using methods like arc, MIG, or TIG welding",
+            "They read drawings and prepare materials for welding work",
+            "They perform hot work safely under proper permits and supervision",
+            "Fitters install, assemble, and align pipes, valves, and mechanical equipment",
+            "They cut, fit, and weld piping sections and replace gaskets and seals"
+        ],
+        "manpower": ["Welders", "Mechanical Fitters", "Technicians", "Supervisors"]
+      }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects",
+      "description": "View all projects"
+    },
+    {
+      "id": "sdm",
+      "name": "SDM Projects",
+      "description": "Shutdown and maintenance projects"
+    },
+    {
+      "id": "maintenance",
+      "name": "Daily Maintenance",
+      "description": "Ongoing maintenance projects"
+    },
+    {
+      "id": "construction",
+      "name": "Construction",
+      "description": "Construction and installation projects"
+    },
+    {
+      "id": "ongoing",
+      "name": "Ongoing",
+      "description": "Currently active projects"
+    }
+  ]
+} 

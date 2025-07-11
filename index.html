@@ -22,6 +22,36 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .carousel-slide.active {
+            opacity: 1;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* object-fit: contain;
+            object-position: center; */
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -29,7 +59,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <img src="logo.png" alt="JBS Mechanical & Engineering" class="h-16 w-auto">
+                    <img src="./images/logo.png" alt="JBS Mechanical & Engineering" class="h-16 w-auto">
                     <div class="ml-4">
                         <h1 class="text-xl font-bold text-jbs-dark">JBS MECHANICAL & ENGINEERING</h1>
                         <p class="text-sm text-gray-600">PTE LTD</p>
@@ -71,23 +101,49 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-20 bg-gradient-to-br from-jbs-purple via-jbs-blue to-jbs-magenta text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    Your Trusted Partner in<br>
-                    <span class="text-yellow-300">Industrial Solutions</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                    Our vision is to be the choice and partner for solutions of Plant maintenance & shut down works and related pipe fabrications works in the process industry
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="services.html" class="bg-yellow-400 text-jbs-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
-                        Explore Our Services
-                    </a>
-                    <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-jbs-purple transition duration-300">
-                        Request Quote
-                    </a>
+    <section class="pt-20 relative overflow-hidden">
+        <!-- Carousel Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="carousel-container relative w-full h-full">
+                <div class="carousel-slide active">
+                    <img src="./images/carousel-01.jpeg" alt="Industrial Solutions" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/carousel-02.jpeg" alt="Plant Maintenance" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/carousel-03.jpeg" alt="Piping Fabrication" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/carousel-04.jpeg" alt="Industrial Services" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/carousel-05.jpeg" alt="Engineering Excellence" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <!-- Dark Overlay -->
+            <!-- <div class="absolute inset-0 bg-black bg-opacity-30"></div> -->
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 bg-gradient-to-br from-jbs-purple/50 via-jbs-blue/50 to-jbs-magenta/50 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        Your Trusted Partner in<br>
+                        <span class="text-yellow-300">Industrial Solutions</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                        Our vision is to be the choice and partner for solutions of Plant maintenance & shut down works and related pipe fabrications works in the process industry
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="services.html" class="bg-yellow-400 text-jbs-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+                            Explore Our Services
+                        </a>
+                        <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-jbs-purple transition duration-300">
+                            Request Quote
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,7 +435,7 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="col-span-2">
                     <div class="flex items-center mb-4">
-                        <img src="logo.png" alt="JBS Mechanical & Engineering" class="h-12 w-auto mr-3">
+                        <img src="./images/logo.png" alt="JBS Mechanical & Engineering" class="h-12 w-auto mr-3">
                         <div>
                             <h3 class="text-lg font-bold">JBS MECHANICAL & ENGINEERING</h3>
                             <p class="text-sm text-gray-400">PTE LTD</p>
@@ -431,6 +487,19 @@
             mobileMenuButton.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
             });
+            
+            // Carousel Functionality
+            const slides = document.querySelectorAll('.carousel-slide');
+            let currentSlide = 0;
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            
+            // Auto-advance carousel every 5 seconds
+            setInterval(nextSlide, 5000);
         });
     </script>
 </body>

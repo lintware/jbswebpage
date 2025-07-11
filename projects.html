@@ -29,7 +29,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <img src="logo.png" alt="JBS Mechanical & Engineering" class="h-16 w-auto">
+                    <img src="./images/logo.png" alt="JBS Mechanical & Engineering" class="h-16 w-auto">
                     <div class="ml-4">
                         <h1 class="text-xl font-bold text-jbs-dark">JBS MECHANICAL & ENGINEERING</h1>
                         <p class="text-sm text-gray-600">PTE LTD</p>
@@ -109,12 +109,8 @@
     <!-- Project Filter -->
     <section class="py-8 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="filter-btn active bg-jbs-purple text-white px-6 py-2 rounded-lg font-semibold hover:bg-jbs-magenta transition duration-300" data-filter="all">All Projects</button>
-                <button class="filter-btn bg-white text-jbs-purple px-6 py-2 rounded-lg font-semibold hover:bg-jbs-purple hover:text-white transition duration-300" data-filter="sdm">SDM Projects</button>
-                <button class="filter-btn bg-white text-jbs-purple px-6 py-2 rounded-lg font-semibold hover:bg-jbs-purple hover:text-white transition duration-300" data-filter="maintenance">Daily Maintenance</button>
-                <button class="filter-btn bg-white text-jbs-purple px-6 py-2 rounded-lg font-semibold hover:bg-jbs-purple hover:text-white transition duration-300" data-filter="construction">Construction</button>
-                <button class="filter-btn bg-white text-jbs-purple px-6 py-2 rounded-lg font-semibold hover:bg-jbs-purple hover:text-white transition duration-300" data-filter="ongoing">Ongoing</button>
+            <div class="flex flex-wrap justify-center gap-4" id="filter-buttons">
+                <!-- Filter buttons will be dynamically generated -->
             </div>
         </div>
     </section>
@@ -123,327 +119,7 @@
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
-                
-                <!-- DENKA Daily Maintenance -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="maintenance ongoing">
-                    <div class="bg-gradient-to-r from-jbs-purple to-jbs-blue text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">DENKA Daily Maintenance</h3>
-                        <p class="text-sm opacity-90">Singapore Takada Ind Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2022-2024</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Inspect and Repair Pipes, Flanges, and Gaskets</li>
-                            <li>• Tighten Connections and Replace Damaged Parts</li>
-                            <li>• Assist in Pipe Fabrication and Installation</li>
-                            <li>• Support Valve Maintenance and Alignment</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DENKA SDM -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="sdm">
-                    <div class="bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">DENKA-SDM Project</h3>
-                        <p class="text-sm opacity-90">Singapore Takada Ind Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">March-May 2022</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Dismantle and reinstall pumps, valves, heat exchangers</li>
-                            <li>• Cut, fit, weld piping, tighten flanges</li>
-                            <li>• Perform welding works with hot work safety</li>
-                            <li>• Clean tanks and vessels, internal inspections</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PCS SDM -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="sdm">
-                    <div class="bg-gradient-to-r from-jbs-magenta to-jbs-purple text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">PCS SDM Project</h3>
-                        <p class="text-sm opacity-90">Singapore Takada Ind Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">June-December 2022</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Dismantle and reinstall pumps, valves, heat exchangers</li>
-                            <li>• Cut, fit, weld piping and install pipe supports</li>
-                            <li>• Perform welding works with NDT inspection support</li>
-                            <li>• Ensure all tasks maintain equipment integrity</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- EVLS SDM -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="sdm ongoing">
-                    <div class="bg-gradient-to-r from-jbs-purple to-jbs-blue text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">EVLS-SDM Project</h3>
-                        <p class="text-sm opacity-90">Singapore Takada Ind Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2022-2025</span>
-                            <span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Dismantle and reinstall equipment and heat exchangers</li>
-                            <li>• Welding works with hot work safety protocols</li>
-                            <li>• Clean tanks and vessels, blind/de-blind lines</li>
-                            <li>• Ensure equipment integrity and plant safety</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AKSS SDM -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="sdm ongoing">
-                    <div class="bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">AKSS-SDM Project</h3>
-                        <p class="text-sm opacity-90">Singapore Takada Ind Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2022-2025</span>
-                            <span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Client:</h4>
-                        <p class="text-sm text-gray-700 mb-3">Asahi Kasei Synthetic Rubber Singapore Pte Ltd</p>
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Annual SDM operations</li>
-                            <li>• Tank/Vessel cleaning work</li>
-                            <li>• Installation of pump work</li>
-                            <li>• Blending/De-blending work</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CRISP-EXXONMOBILE -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction ongoing">
-                    <div class="bg-gradient-to-r from-jbs-magenta to-jbs-purple text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">CRISP-EXXONMOBILE</h3>
-                        <p class="text-sm opacity-90">Aerostar Corporation Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">Jan-Sep 2024</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Installing and aligning pipes, valves, and equipment</li>
-                            <li>• Cutting, welding, and replacing gaskets and seals</li>
-                            <li>• Assisting in dismantling and reinstalling</li>
-                            <li>• Cleaning, carrying materials, supporting skilled workers</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6TF Project -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction ongoing">
-                    <div class="bg-gradient-to-r from-jbs-purple to-jbs-blue text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">6TF Project</h3>
-                        <p class="text-sm opacity-90">Singapore Takada Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2022-2025</span>
-                            <span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Install and assemble pipes, valves for plant system</li>
-                            <li>• Flange tightening, gasket replacement</li>
-                            <li>• Hydrotesting to ensure leak-free piping systems</li>
-                            <li>• Supporting by carrying tools, site preparation</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SEMBCORP Project -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction">
-                    <div class="bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">SEMBCORP Project</h3>
-                        <p class="text-sm opacity-90">Nippon Express Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">Jan-June 2023</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Fitters install and assemble pipes, valves, equipment</li>
-                            <li>• Tighten flanges, replace gaskets, align parts</li>
-                            <li>• Assist in welding preparation and pipe supports</li>
-                            <li>• General workers clean site and carry materials</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- LINDE Project -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction ongoing">
-                    <div class="bg-gradient-to-r from-jbs-magenta to-jbs-purple text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">LINDE Project</h3>
-                        <p class="text-sm opacity-90">Clarity E & C Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2025</span>
-                            <span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Welders and fitters assemble metal structures</li>
-                            <li>• Read and follow technical drawings</li>
-                            <li>• Use various welding techniques (arc, MIG, TIG)</li>
-                            <li>• Follow safety procedures with protective gear</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Welders</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UPWRP (PUB) Project -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction">
-                    <div class="bg-gradient-to-r from-jbs-purple to-jbs-blue text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">UPWRP (PUB) Project</h3>
-                        <p class="text-sm opacity-90">Asia Project Engineering Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">Oct-Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Installing and aligning pipes, valves, and equipment</li>
-                            <li>• Cutting, welding, and replacing gaskets and seals</li>
-                            <li>• Assisting in dismantling and reinstalling work</li>
-                            <li>• Setting up barriers and moving tools for tasks</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- KEPPEL MARINA Project -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction ongoing">
-                    <div class="bg-gradient-to-r from-jbs-blue to-jbs-magenta text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">KEPPEL MARINA Project</h3>
-                        <p class="text-sm opacity-90">Rihno2 Technology Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2025</span>
-                            <span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Welders and fitters assemble metal structures</li>
-                            <li>• Read and follow technical drawings</li>
-                            <li>• Align and position pipes and parts before welding</li>
-                            <li>• Follow safety procedures and use protective gear</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Mechanical Fitters</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TUAS Project -->
-                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="construction ongoing">
-                    <div class="bg-gradient-to-r from-jbs-magenta to-jbs-purple text-white p-6">
-                        <h3 class="text-xl font-bold mb-2">TUAS Project</h3>
-                        <p class="text-sm opacity-90">Loh & Loh Engineering Pte Ltd</p>
-                        <div class="mt-3">
-                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">2025</span>
-                            <span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
-                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
-                            <li>• Welders join metal parts using arc, MIG, TIG welding</li>
-                            <li>• Read drawings and prepare materials for welding</li>
-                            <li>• Perform hot work safely under proper permits</li>
-                            <li>• Check weld quality and assist with NDT testing</li>
-                        </ul>
-                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-jbs-purple text-white text-xs px-2 py-1 rounded">Welders</span>
-                            <span class="bg-jbs-blue text-white text-xs px-2 py-1 rounded">Technicians</span>
-                            <span class="bg-jbs-magenta text-white text-xs px-2 py-1 rounded">Supervisors</span>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- Project cards will be dynamically generated -->
             </div>
         </div>
     </section>
@@ -514,7 +190,7 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="col-span-2">
                     <div class="flex items-center mb-4">
-                        <img src="logo.png" alt="JBS Mechanical & Engineering" class="h-12 w-auto mr-3">
+                        <img src="./images/logo.png" alt="JBS Mechanical & Engineering" class="h-12 w-auto mr-3">
                         <div>
                             <h3 class="text-lg font-bold">JBS MECHANICAL & ENGINEERING</h3>
                             <p class="text-sm text-gray-400">PTE LTD</p>
@@ -559,16 +235,99 @@
 
     <!-- Scripts -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const mobileMenu = document.querySelector('.mobile-menu');
-            
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
+        let projectsData = null;
+        let categoriesData = null;
 
-            // Project Filter
+        // Load projects data from JSON file
+        async function loadProjectsData() {
+            try {
+                const response = await fetch('./content/projects.json');
+                const data = await response.json();
+                projectsData = data.projects;
+                categoriesData = data.categories;
+                return data;
+            } catch (error) {
+                console.error('Error loading projects data:', error);
+                return null;
+            }
+        }
+
+        // Generate filter buttons
+        function generateFilterButtons() {
+            const filterContainer = document.getElementById('filter-buttons');
+            if (!filterContainer || !categoriesData) return;
+
+            filterContainer.innerHTML = '';
+            
+            categoriesData.forEach((category, index) => {
+                const button = document.createElement('button');
+                button.className = `filter-btn ${index === 0 ? 'active bg-jbs-purple text-white' : 'bg-white text-jbs-purple'} px-6 py-2 rounded-lg font-semibold hover:bg-jbs-purple hover:text-white transition duration-300`;
+                button.setAttribute('data-filter', category.id);
+                button.textContent = category.name;
+                filterContainer.appendChild(button);
+            });
+        }
+
+        // Generate project cards
+        function generateProjectCards() {
+            const projectsGrid = document.getElementById('projects-grid');
+            if (!projectsGrid || !projectsData) return;
+
+            projectsGrid.innerHTML = '';
+            
+            projectsData.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'project-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300';
+                card.setAttribute('data-category', project.categories.join(' '));
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                
+                // Generate manpower badges with colors
+                const manpowerBadges = project.manpower.map((role, index) => {
+                    const colors = ['bg-jbs-purple', 'bg-jbs-blue', 'bg-jbs-magenta'];
+                    const color = colors[index % colors.length];
+                    return `<span class="${color} text-white text-xs px-2 py-1 rounded">${role}</span>`;
+                }).join('');
+
+                // Generate job scope list
+                const jobScopeList = project.jobScope.map(item => `<li>• ${item}</li>`).join('');
+
+                // Generate status badge if ongoing
+                const statusBadge = project.status === 'ongoing' ? 
+                    '<span class="bg-yellow-400 text-jbs-dark text-xs px-2 py-1 rounded ml-1">Ongoing</span>' : '';
+
+                // Generate client section (special handling for AKSS project)
+                const clientSection = project.clientFullName ? 
+                    `<h4 class="font-bold text-jbs-dark mb-3">Client:</h4>
+                     <p class="text-sm text-gray-700 mb-3">${project.clientFullName}</p>` : '';
+
+                card.innerHTML = `
+                    <div class="bg-gradient-to-r ${project.gradient} text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">${project.title}</h3>
+                        <p class="text-sm opacity-90">${project.client}</p>
+                        <div class="mt-3">
+                            <span class="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">${project.period}</span>
+                            ${statusBadge}
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        ${clientSection}
+                        <h4 class="font-bold text-jbs-dark mb-3">Job Scope:</h4>
+                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+                            ${jobScopeList}
+                        </ul>
+                        <h4 class="font-bold text-jbs-dark mb-2">Manpower Supplied:</h4>
+                        <div class="flex flex-wrap gap-1">
+                            ${manpowerBadges}
+                        </div>
+                    </div>
+                `;
+                
+                projectsGrid.appendChild(card);
+            });
+        }
+
+        // Initialize filter functionality
+        function initializeFilters() {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
 
@@ -602,11 +361,25 @@
                     });
                 });
             });
+        }
 
-            // Add transition styles to project cards
-            projectCards.forEach(card => {
-                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        // Main initialization
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
             });
+
+            // Load and initialize projects
+            const data = await loadProjectsData();
+            if (data) {
+                generateFilterButtons();
+                generateProjectCards();
+                initializeFilters();
+            }
         });
     </script>
 </body>

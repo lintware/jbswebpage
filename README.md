@@ -29,7 +29,7 @@ jbswebpage/
 ├── manpower.html       # Manpower and workforce
 ├── contact.html        # Contact information and form
 ├── styles.css          # Custom CSS enhancements
-├── logo.png           # Company logo
+├── ./images/logo.png           # Company logo
 ├── README.md          # This documentation
 └── Company Profile-JBS - Update (1).txt  # Source content
 ```
