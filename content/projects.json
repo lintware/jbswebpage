@@ -84,7 +84,7 @@
     {
       "id": "crisp-exxonmobile",
       "title": "CRISP-EXXONMOBILE",
-      "client": "Aerostar Corporation Pte Ltd",
+      "client": "PEC PTE LTD",
       "period": "Jan-Sep 2024",
       "status": "completed",
       "categories": ["construction", "ongoing"],
@@ -100,7 +100,7 @@
     {
       "id": "6tf-project",
       "title": "6TF Project",
-      "client": "Singapore Takada Pte Ltd",
+      "client": "Singapore Takada Ind Pte Ltd",
       "period": "2022-2025",
       "status": "ongoing",
       "categories": ["construction", "ongoing"],
@@ -116,7 +116,7 @@
     {
       "id": "sembcorp-project",
       "title": "SEMBCORP Project",
-      "client": "Nippon Express Pte Ltd",
+      "client": "Nippon Express global pte ltd",
       "period": "Jan-June 2023",
       "status": "completed",
       "categories": ["construction"],
