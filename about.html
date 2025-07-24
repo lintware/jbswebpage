@@ -82,58 +82,158 @@
         </div>
     </section>
 
-    <!-- Organization Chart Section -->
+    <!-- Leadership Team Section -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-jbs-dark mb-4">Our Leadership & Structure</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-jbs-dark mb-4">Our Leadership Team</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">The experienced team guiding JBS Mechanical & Engineering toward excellence in the process industry.</p>
             </div>
 
-            <!-- Leadership Row -->
-            <div class="flex flex-col items-center justify-center space-y-12">
-                <!-- Top Level -->
-                <div class="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16">
-                    <!-- Managing Director -->
-                    <div class="flex flex-col items-center text-center w-64">
-                        <img src="./images/md.png" alt="Managing Director, Mr. Win Myint" class="w-40 h-40 rounded-full object-cover border-4 border-jbs-purple shadow-xl mb-4">
-                        <h3 class="text-xl font-bold text-jbs-dark">Mr. WIN MYINT</h3>
-                        <p class="font-semibold text-jbs-purple">Managing Director</p>
-                        <p class="text-sm text-gray-500 mt-1">H/p: 9237 1739</p>
-                    </div>
-                    
-                    <!-- Business Development Executive -->
-                    <div class="flex flex-col items-center text-center w-64">
-                        <img src="./images/ba.png" alt="Business Development Executive, Mr. Anower Hossion" class="w-40 h-40 rounded-full object-cover border-4 border-jbs-blue shadow-xl mb-4">
-                        <h3 class="text-xl font-bold text-jbs-dark">MR. ANOWER HOSSION</h3>
-                        <p class="font-semibold text-jbs-blue">Business Development Executive</p>
-                        <p class="text-sm text-gray-500 mt-1">HP: 9353 2674</p>
-                    </div>
-                </div>
-
-                <!-- Connecting Line -->
-                <div class="w-px h-12 bg-gray-300"></div>
-
-                <!-- Second Level -->
-                <div class="flex flex-wrap justify-center gap-8 md:gap-12">
-                    <div class="flex flex-col items-center text-center w-56">
-                        <div class="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center border-4 border-gray-300 shadow-lg mb-4">
-                            <i class="fas fa-calculator text-4xl text-gray-500"></i>
-                        </div>
-                        <span class="text-xl font-bold">ACCOUNTANT</span>
-                        <span class="text-lg font-semibold mt-2">Mr. Thein Tun Aung@Donally</span>
-                        <span class="text-base font-normal mt-1">H/p-93961662</span>
-                    </div>
-                    <div class="flex flex-col items-center text-center w-56">
-                        <div class="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center border-4 border-gray-300 shadow-lg mb-4">
-                            <i class="fas fa-user-tie text-4xl text-gray-500"></i>
-                        </div>
-                        <span class="text-xl font-bold">ADMIN</span>
-                        <span class="text-lg font-semibold mt-2">NATARAJAN ANBAZHAGAN</span>
-                        <span class="text-base font-normal mt-1">H/p-93452513</span>
+            <!-- Leadership Tabs -->
+            <div class="mb-8">
+                <div class="flex justify-center">
+                    <div class="bg-gray-200 rounded-lg p-1 inline-flex">
+                        <button class="leadership-tab active px-6 py-3 bg-blue-600 text-white rounded-md font-medium transition-all duration-200" data-tab="board">
+                            Board of Directors
+                        </button>
+                        <button class="leadership-tab px-6 py-3 text-gray-600 hover:text-blue-600 rounded-md font-medium transition-all duration-200" data-tab="executives">
+                            Key Executives
+                        </button>
                     </div>
                 </div>
             </div>
+
+            <!-- Board of Directors Tab Content -->
+            <div id="board-tab" class="leadership-content">
+                <div class="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
+                    <!-- Managing Director -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 w-64">
+                        <div class="aspect-square">
+                            <img src="./images/md.png" alt="Managing Director, Mr. Win Myint" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Mr. WIN MYINT</h3>
+                            <p class="text-sm text-gray-600 mb-3">Managing Director</p>
+                            <p class="text-sm text-blue-600 font-medium">H/p: 9237 1739</p>
+                        </div>
+                    </div>
+
+                    <!-- Business Development Executive -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 w-64">
+                        <div class="aspect-square">
+                            <img src="./images/ba.png" alt="Business Development Executive, Mr. Anower Hossion" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">MR. ANOWER HOSSION</h3>
+                            <p class="text-sm text-gray-600 mb-3">Business Development Executive</p>
+                            <p class="text-sm text-blue-600 font-medium">HP: 9353 2674</p>
+                        </div>
+                    </div>
+
+                    <!-- Shareholder -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 w-64">
+                        <div class="aspect-square">
+                            <img src="./images/Ahad.png" alt="Shareholder, Md Ahad Khan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">MD AHAD KHAN</h3>
+                            <p class="text-sm text-gray-600 mb-3">Shareholder</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Key Executives Tab Content -->
+            <div id="executives-tab" class="leadership-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Safety Coordinator -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/jayaraman.png" alt="WSHC Safety Coordinator, Mr. C. Jayaraman" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">MR. C. JAYARAMAN</h3>
+                            <p class="text-sm text-gray-600 mb-2">WSHC</p>
+                            <p class="text-xs text-blue-600">Safety Coordinator</p>
+                        </div>
+                    </div>
+
+                    <!-- Safety Co-Ordinator -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/MdShakilHossain.png" alt="Safety Co-Ordinator, Md Shakil Hossain" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">MD SHAKIL HOSSAIN</h3>
+                            <p class="text-sm text-gray-600 mb-2">Safety Co-Ordinator</p>
+                            <p class="text-xs text-blue-600">Safety Department</p>
+                        </div>
+                    </div>
+
+                    <!-- Mechanical Supervisor -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/NyiNyiTun.png" alt="Mechanical Supervisor, Mr. Nyi Nyi Tun" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">MR. NYI NYI TUN</h3>
+                            <p class="text-sm text-gray-600 mb-2">Mechanical Supervisor</p>
+                            <p class="text-xs text-blue-600">Mechanical Department</p>
+                        </div>
+                    </div>
+
+                    <!-- Piping Supervisor -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/NaingLin.png" alt="Piping Supervisor, Mr. Naing Lin" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">MR. NAING LIN</h3>
+                            <p class="text-sm text-gray-600 mb-2">Piping Supervisor</p>
+                            <p class="text-xs text-blue-600">Piping Department</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Manager -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/Ranjith.png" alt="Project Manager, Mr. Ranjith" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">MR. RANJITH</h3>
+                            <p class="text-sm text-gray-600 mb-2">Project Manager</p>
+                            <p class="text-xs text-blue-600">Electrical Department</p>
+                        </div>
+                    </div>
+
+                    <!-- Accountant -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/donally.png" alt="Accountant, Mr. Thein Tun Aung@Donally" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">Mr. Thein Tun Aung@Donally</h3>
+                            <p class="text-sm text-gray-600 mb-2">Accountant</p>
+                            <p class="text-xs text-blue-600">H/p: 93961662</p>
+                        </div>
+                    </div>
+
+                    <!-- Admin -->
+                    <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="aspect-square">
+                            <img src="./images/NATARAJAN.png" alt="Admin, Natarajan Anbazhagan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-900 mb-1">NATARAJAN ANBAZHAGAN</h3>
+                            <p class="text-sm text-gray-600 mb-2">Admin</p>
+                            <p class="text-xs text-blue-600">H/p: 93452513</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
             <!-- Departments Grid -->
             <div class="mt-20">
@@ -563,6 +663,34 @@
             
             mobileMenuButton.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
+            });
+
+            // Leadership Tab functionality
+            const leadershipTabs = document.querySelectorAll('.leadership-tab');
+            const leadershipContents = document.querySelectorAll('.leadership-content');
+
+            leadershipTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs
+                    leadershipTabs.forEach(t => {
+                        t.classList.remove('active', 'bg-blue-600', 'text-white');
+                        t.classList.add('text-gray-600', 'hover:text-blue-600');
+                    });
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active', 'bg-blue-600', 'text-white');
+                    this.classList.remove('text-gray-600', 'hover:text-blue-600');
+                    
+                    // Hide all content
+                    leadershipContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    
+                    // Show target content
+                    document.getElementById(targetTab + '-tab').classList.remove('hidden');
+                });
             });
         });
     </script>
