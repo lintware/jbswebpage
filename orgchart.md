@@ -3,33 +3,48 @@
 ## Company Structure
 
 ```mermaid
-graph TD
-    %% Board of Directors Level (Same Level)
-    MD["`**Mr. WIN MYINT**
+flowchart TD
+    %% ===========================================
+    %% BOARD OF DIRECTORS LEVEL
+    %% ===========================================
+    MD["`🏢 **Mr. WIN MYINT**
     Managing Director`"]
-    BDE["`**MR. ANOWER HOSSION**
+    
+    %% ===========================================
+    %% EXECUTIVE LEVEL (C-Suite & Directors)
+    %% ===========================================
+    BDE["`💼 **MR. ANOWER HOSSION**
     Business Development Executive`"]
-    SH["`**MD AHAD KHAN**
+    SH["`👥 **MD AHAD KHAN**
     Shareholder`"]
     
-    %% Key Executives Level
-    ACC["`**Mr. Thein Tun Aung@Donally**
-    Accountant`"]
-    ADM["`**NATARAJAN ANBAZHAGAN** 
-    Admin`"]
-    WSH["`**MR. C. JAYARAMAN**
+    %% ===========================================
+    %% DEPARTMENT HEADS & MANAGERS
+    %% ===========================================
+    ACC["`💰 **Mr. Thein Tun Aung@Donally**
+    Chief Accountant`"]
+    ADM["`🏛️ **NATARAJAN ANBAZHAGAN**
+    Admin Manager`"]
+    WSH["`🛡️ **MR. C. JAYARAMAN**
     WSHC Safety Coordinator`"]
-    SC["`**MD SHAKIL HOSSAIN**
+    SC["`⚠️ **MD SHAKIL HOSSAIN**
     Safety Co-Ordinator`"]
-    MS["`**MR. NYI NYI TUN**
-    Mechanical Supervisor`"]
-    PS["`**MR. NAING LIN**
-    Piping Supervisor`"]
-    PM["`**MR. RANJITH**
-    Project Manager - Electrical`"]
     
-    %% Department Teams
-    MECHTEAM["`**Mechanical Team**
+    %% ===========================================
+    %% SUPERVISORS & PROJECT MANAGERS
+    %% ===========================================
+    MS["`🔧 **MR. NYI NYI TUN**
+    Mechanical Supervisor`"]
+    PS["`🔩 **MR. NAING LIN**
+    Piping Supervisor`"]
+    PM["`⚡ **MR. RANJITH**
+    Electrical Project Manager`"]
+    
+    %% ===========================================
+    %% OPERATIONAL TEAMS
+    %% ===========================================
+    MECHTEAM["`🔨 **Mechanical Team** (8 members)
+    ────────────────────────
     • MR. JAHANGIR ALAM
     • MR. THAN SWE
     • MR. ROKUNUL ISLAM
@@ -39,7 +54,8 @@ graph TD
     • MR. AMINUL ISLAM
     • MR. RASHIDUL ISLAM`"]
     
-    WELDTEAM["`**Welding Team**
+    WELDTEAM["`🔥 **Welding Team** (8 members)
+    ────────────────────────
     • MR. GOVINDA
     • MR. MIA MANIR
     • MR. MIA ROY
@@ -49,7 +65,8 @@ graph TD
     • MR. MOTIUR RAHMAN
     • MR. NURUL ISLAM`"]
     
-    PIPETEAM["`**Piping Team**
+    PIPETEAM["`🚰 **Piping Team** (7 members)
+    ────────────────────────
     • MR. SHAFIKUL ISLAM
     • MR. MONIR HOSSAIN
     • MR. BILLAL HOSSAIN
@@ -58,61 +75,88 @@ graph TD
     • MR. ABDUL MANNAN
     • MR. RAFIQUL ISLAM`"]
     
-    ELECTEAM["`**Electrical Team**
+    ELECTEAM["`⚡ **Electrical Team** (4 members)
+    ────────────────────────
     • MR. POOVIDARAN
     • MR. ARUNKUMAR
     • MR. SELVAM
     • MR. GANESH`"]
     
-    SAFETEAM["`**Safety Team**
+    SAFETEAM["`🦺 **Safety Team** (3 members)
+    ────────────────────────
     • MR. SABARINATHAN
     • MR. KUMAR SELVAN
     • MR. RAVI SHANKAR`"]
     
-    LOGITEAM["`**Logistics Team**
+    LOGITEAM["`🚛 **Logistics Team** (4 members)
+    ────────────────────────
     • MR. PALANI
     • MR. SOLARAJ
     • MR. MURUGAN
     • MR. KRISHNAN`"]
     
-    INSULTEAM["`**Insulation Team**
+    INSULTEAM["`🏠 **Insulation Team** (3 members)
+    ────────────────────────
     • MR. SHIU
     • MR. WONG
     • MR. LIM`"]
     
-    %% Board Level - All same level
-    MD --- BDE
-    BDE --- SH
+    %% ===========================================
+    %% ORGANIZATIONAL HIERARCHY
+    %% ===========================================
     
-    %% Board to Key Executives
+    %% Board Level
+    MD --> BDE
+    MD --> SH
+    
+    %% Executive Level Reports to MD
     MD --> ACC
     MD --> ADM
     BDE --> WSH
     BDE --> SC
-    BDE --> MS
-    BDE --> PS
+    
+    %% Department Heads Report to Executives
+    ADM --> MS
+    ADM --> PS
     BDE --> PM
     
-    %% Key Executives to Department Teams
+    %% Teams Report to Supervisors/Managers
     MS --> MECHTEAM
     MS --> WELDTEAM
     PS --> PIPETEAM
     PM --> ELECTEAM
     WSH --> SAFETEAM
     SC --> SAFETEAM
+    ADM --> LOGITEAM
+    ACC --> INSULTEAM
     
-    %% Support Departments report directly to Board
-    MD --> LOGITEAM
-    SH --> INSULTEAM
+    %% ===========================================
+    %% ADVANCED STYLING
+    %% ===========================================
     
-    %% Styling
-    classDef boardLevel fill:#6B46C1,stroke:#4C1D95,stroke-width:3px,color:#fff,font-weight:bold,font-size:14px
-    classDef execLevel fill:#1E40AF,stroke:#1E3A8A,stroke-width:2px,color:#fff,font-weight:bold,font-size:13px
-    classDef team fill:#059669,stroke:#047857,stroke-width:2px,color:#fff,font-size:11px
-    classDef support fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff,font-size:11px
+    %% Board of Directors (Top Tier)
+    classDef ceo fill:#1a1a2e,stroke:#16213e,stroke-width:4px,color:#fff,font-weight:bold,font-size:16px,border-radius:15px
     
-    class MD,BDE,SH boardLevel
-    class ACC,ADM,WSH,SC,MS,PS,PM execLevel
+    %% Executive Level (C-Suite)
+    classDef executive fill:#16537e,stroke:#0f3460,stroke-width:3px,color:#fff,font-weight:bold,font-size:14px,border-radius:12px
+    
+    %% Department Heads & Managers
+    classDef manager fill:#1e88e5,stroke:#1565c0,stroke-width:2px,color:#fff,font-weight:bold,font-size:13px,border-radius:10px
+    
+    %% Supervisors
+    classDef supervisor fill:#43a047,stroke:#2e7d32,stroke-width:2px,color:#fff,font-weight:bold,font-size:12px,border-radius:8px
+    
+    %% Operational Teams
+    classDef team fill:#7cb342,stroke:#558b2f,stroke-width:2px,color:#fff,font-size:11px,border-radius:8px
+    
+    %% Support Teams
+    classDef support fill:#fb8c00,stroke:#ef6c00,stroke-width:2px,color:#fff,font-size:11px,border-radius:8px
+    
+    %% Apply Styles
+    class MD ceo
+    class BDE,SH executive
+    class ACC,ADM,WSH,SC manager
+    class MS,PS,PM supervisor
     class MECHTEAM,WELDTEAM,PIPETEAM,ELECTEAM,SAFETEAM team
     class LOGITEAM,INSULTEAM support
 ```
