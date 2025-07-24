@@ -4,7 +4,7 @@
 
 ```mermaid
 graph TD
-    %% Board of Directors Level
+    %% Board of Directors Level (Same Level)
     MD["`**Mr. WIN MYINT**
     Managing Director`"]
     BDE["`**MR. ANOWER HOSSION**
@@ -17,20 +17,16 @@ graph TD
     Accountant`"]
     ADM["`**NATARAJAN ANBAZHAGAN** 
     Admin`"]
-    
-    %% Department Heads
     WSH["`**MR. C. JAYARAMAN**
     WSHC Safety Coordinator`"]
+    SC["`**MD SHAKIL HOSSAIN**
+    Safety Co-Ordinator`"]
     MS["`**MR. NYI NYI TUN**
     Mechanical Supervisor`"]
     PS["`**MR. NAING LIN**
     Piping Supervisor`"]
     PM["`**MR. RANJITH**
     Project Manager - Electrical`"]
-    
-    %% Safety Co-ordinator
-    SC["`**MD SHAKIL HOSSAIN**
-    Safety Co-Ordinator`"]
     
     %% Department Teams
     MECHTEAM["`**Mechanical Team**
@@ -84,39 +80,39 @@ graph TD
     • MR. WONG
     • MR. LIM`"]
     
-    %% Reporting Structure
-    MD --> BDE
-    MD --> SH
+    %% Board Level - All same level
+    MD --- BDE
+    BDE --- SH
+    
+    %% Board to Key Executives
     MD --> ACC
     MD --> ADM
-    MD --> WSH
-    MD --> MS
-    MD --> PS
-    MD --> PM
+    BDE --> WSH
+    BDE --> SC
+    BDE --> MS
+    BDE --> PS
+    BDE --> PM
     
-    %% Department Supervision
-    WSH --> SC
-    WSH --> SAFETEAM
-    SC --> SAFETEAM
+    %% Key Executives to Department Teams
     MS --> MECHTEAM
     MS --> WELDTEAM
     PS --> PIPETEAM
     PM --> ELECTEAM
+    WSH --> SAFETEAM
+    SC --> SAFETEAM
     
-    %% Support Departments
+    %% Support Departments report directly to Board
     MD --> LOGITEAM
-    MD --> INSULTEAM
+    SH --> INSULTEAM
     
     %% Styling
-    classDef boardLevel fill:#6B46C1,stroke:#4C1D95,stroke-width:3px,color:#fff,font-weight:bold
-    classDef execLevel fill:#1E40AF,stroke:#1E3A8A,stroke-width:2px,color:#fff,font-weight:bold
-    classDef deptHead fill:#DB2777,stroke:#BE185D,stroke-width:2px,color:#fff,font-weight:bold
-    classDef team fill:#059669,stroke:#047857,stroke-width:2px,color:#fff,font-size:12px
-    classDef support fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff,font-size:12px
+    classDef boardLevel fill:#6B46C1,stroke:#4C1D95,stroke-width:3px,color:#fff,font-weight:bold,font-size:14px
+    classDef execLevel fill:#1E40AF,stroke:#1E3A8A,stroke-width:2px,color:#fff,font-weight:bold,font-size:13px
+    classDef team fill:#059669,stroke:#047857,stroke-width:2px,color:#fff,font-size:11px
+    classDef support fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff,font-size:11px
     
     class MD,BDE,SH boardLevel
-    class ACC,ADM execLevel
-    class WSH,MS,PS,PM,SC deptHead
+    class ACC,ADM,WSH,SC,MS,PS,PM execLevel
     class MECHTEAM,WELDTEAM,PIPETEAM,ELECTEAM,SAFETEAM team
     class LOGITEAM,INSULTEAM support
 ```

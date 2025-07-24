@@ -80,7 +80,7 @@ jbswebpage/
   - Client and main contractor
   - Project timeline
   - Job scope details
-  - Manpower supplied
+  - Manpower Support
 - **Success Stories** - Highlights of project achievements
 
 ### 5. Manpower (`manpower.html`)

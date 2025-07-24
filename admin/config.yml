@@ -74,7 +74,7 @@ collections:
           options: ["Daily Maintenance", "Annual SDM", "Fabrication", "Installation", "Inspection", "Construction"] }
       - { label: "Project Description", name: "description", widget: "markdown" }
       - { label: "Job Scope", name: "job_scope", widget: "list" }
-      - { label: "Manpower Supplied", name: "manpower", widget: "list" }
+      - { label: "Manpower Support", name: "manpower", widget: "list" }
       - { label: "Project Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" }, required: false }
       - { label: "Featured Project", name: "featured", widget: "boolean", default: false }
       - { label: "Status", name: "status", widget: "select", options: ["Completed", "Ongoing", "Upcoming"], default: "Completed" }
