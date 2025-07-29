@@ -198,7 +198,7 @@ flowchart TD
 ---
 
 ## Company Contact Information
-- **Phone**: +65 9353 2674, +65 6561 6934, +65 9337 7831 (Mr Ravi)
+- **Phone**: +65 9353 2674, +65 6561 6934, +65 9337 7831 (Mr. Ravi)
 - **Email**: jbsmechanical56@gmail.com
 - **Address**: Eco-Tech@Sunview, 1 Sunview Road, #02-38/39, Singapore 627615
 
